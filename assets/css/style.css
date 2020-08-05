@@ -17,13 +17,12 @@ header {
     
 }
     
-
-/*header h1{
+header h1{
     font-size: 36px;
     font-style: italic;
     font-weight: bold;
     color: #222d58;
-}*/
+}
     
 header nav ul li a {
     text-decoration: none;
@@ -39,8 +38,6 @@ header nav ul li  {
     margin: 0 18px;
     font-weight: bold;
     ;
-}
-
 }
 
 .profileCard{
