@@ -44,7 +44,8 @@ header nav ul li  {
     box-shadow: 0 4px 8px 0 #a0b3c7;
     transition: .3s;
     border-radius: 10px;
-    display: flex;
+    display: inline-flex;
+    background-color: #a0b3c7;
 }
 .profileCard:hover{
     box-shadow: 0 8px 16px 0 #a0b3c7;
@@ -66,6 +67,9 @@ footer{
     background-color: #a0b3c7;
     display: flex;
     margin: 0;
-    border-radius: 10px;
-    border: 2px #ececdc solid;
+    border-radius: 15px;
+    border: 5px #ececdc solid;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 5px 10px 0 #ececdc;
 }
