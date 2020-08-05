@@ -1,5 +1,18 @@
 body{
     background-color:#222D58;
+    font-family: helvetica, Arial, Sans-serif;
+}
+
+header {
+    padding: 20px 35px;
+    background-color: #a0b3c7;
+}
+
+header h1 {
+    font-size: 32px;
+    color: #ececdc;
+    margin: 0;
+    font-style: italic;
 }
 
 .profileCard{
