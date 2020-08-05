@@ -6,13 +6,41 @@ body{
 header {
     padding: 20px 35px;
     background-color: #a0b3c7;
+    display: flex;
+    margin: 0;
+    border-radius: 15px;
+    border: 5px #ececdc solid;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 5px 10px 0 #ececdc;
+    
+    
+}
+    
+
+/*header h1{
+    font-size: 36px;
+    font-style: italic;
+    font-weight: bold;
+    color: #222d58;
+}*/
+    
+header nav ul li a {
+    text-decoration: none;
+    color: #222d58;
+    text-transform: uppercase;
+    
+
+}
+header nav ul li  {
+    list-style: none;
+    display: inline-flex;
+    font-size: 18px;
+    margin: 0 18px;
+    font-weight: bold;
+    ;
 }
 
-header h1 {
-    font-size: 32px;
-    color: #ececdc;
-    margin: 0;
-    font-style: italic;
 }
 
 .profileCard{
@@ -32,4 +60,15 @@ header h1 {
 .profileCard img{
     border-radius: 5px 5px 0 0;
     display: flex;
+    max-width: 50%;
+    max-height: 50%;
+}
+
+footer{
+    padding: 20px 35px;
+    background-color: #a0b3c7;
+    display: flex;
+    margin: 0;
+    border-radius: 10px;
+    border: 2px #ececdc solid;
 }
