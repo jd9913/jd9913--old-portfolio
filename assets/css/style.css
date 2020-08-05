@@ -1,3 +1,22 @@
 body{
     background-color:#222D58;
 }
+
+.profileCard{
+    box-shadow: 0 4px 8px 0 #a0b3c7;
+    transition: .3s;
+    border-radius: 10px;
+    display: flex;
+}
+.profileCard:hover{
+    box-shadow: 0 8px 16px 0 #a0b3c7;
+}
+.profileContainer{
+    padding: 2px 16px;
+    color: #222d58;
+    background-color: #ececdc;
+}
+.profileCard img{
+    border-radius: 5px 5px 0 0;
+    display: flex;
+}
