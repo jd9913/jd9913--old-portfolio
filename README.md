@@ -9,8 +9,11 @@ This website is to showcase my accomplishments and web applications I've built.
 
 **others to be added later*
 
-## Website
+## Live Website
 https://jd9913.github.io/jd9913
+
+##Github repository
+https://github.com/jd9913/jd9913.git
 
 
 
