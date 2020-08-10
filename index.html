@@ -25,7 +25,7 @@
                     <!--Link to the resume portion-->
                     <li><a href ="#resume">Where I've been</a></li>
                     <!--Link to the contact page/info, located in the footer-->
-                    <li><a href ="contactMe">Find me</a></li>
+                    <li><a href ="contactme">Find me</a></li>
                 </ul>
             </nav>
         </header>
@@ -72,13 +72,50 @@
              </section>
          </article>
          <!--resume summary, links to additional pages -->
-         <article>
+         <article class="resume">
+             <div>
             <h2 id="resume">Where I've been</h2>
+            </div>
+             <section class="resume-grid-container">
+                 <div class="resume-grid-item edu">Education
+                 <p>
+                     List of education placeholder
+                 </p>
+                 </div>
+                 <div class="resume-grid-item work">Work History
+                 <p>
+                     List of past employers placeholder
+                 </p>
+                 </div>
+                 
+             </section>
          </article>
          
          </main>
          <!--Footer with contact/reach out information-->
-        <footer><h2>Contact information:</h2> phone, linkedin profile, email</footer>
+        <footer>
+            <section class="contact-container">
+                <div id="contactme" class="contact-item title">
+                    <h1>Contact information:</h1>
+                </div>
+                <div class="contact-item form">
+                    <h3>Contact Me</h3>
+                    <form>
+                        <label for="contact-name"> Your Name</label>
+                        <input type="text" id="contact-name" placeholder="Your Name" />
+
+                        <label for="contact-message">Message</label>
+                        <textarea id="contact-message" placeholder="Message"></textarea>
+
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+                <div class="contact-item linkedin">
+                    linkedin placeholder
+                </div>
+
+            </section>
+        </footer>
         
         
     </body>

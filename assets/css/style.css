@@ -29,7 +29,7 @@ header {
     
 }
     
-header h1{
+header h1 {
     
     font-style: italic;
     font-weight: bold;
@@ -65,15 +65,34 @@ header nav ul{
 
 }
 
-.aboutme {
-    padding: 20px;
+footer {
+    padding: 20px 35px;
+    background-color: var(--rockBlue);
+    display: flex;
+    margin: 20px;
+    border-radius: 15px;
+    border: 5px var(--satinLinen) solid;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 5px 10px 0 var(--satinLinen);
+}
+
+.contact-container{
+    display: grid;
+    grid-template-columns: repeat(2);
+    grid-gap: 10px;
+    
+}
+
+.aboutme .applications .resume .contact {
+    padding: 20px 35px;
     border-top: 2px solid var(--satinLinen);
     margin: 40px;
     display: block;
     background-color: var(--cloudBurst);
 }
 
-.aboutme h2 {
+ h2 {
         color: var(--satinLinen);
         text-transform: uppercase;
         font-size: 38px;
@@ -144,35 +163,13 @@ header nav ul{
 
 
 
-footer{
-    padding: 20px 35px;
-    background-color:var(--rockBlue);
-    display: flex;
-    margin: 0;
-    border-radius: 15px;
-    border: 5px var(--satinLinen) solid;
-    justify-content: space-between;
-    align-items: center;
-    box-shadow: 0 5px 10px 0 var(--satinLinen);
-}
+
 
 .flex-row{
     display: flex;
 
 }
 
-.applications{
-    padding: 20px;
-    border-top: 2px solid var(--satinLinen);
-    margin: 40px;
-    display: block;
-}
-
-.applications h2{
-    color: var(--satinLinen);
-    text-transform: uppercase;
-    font-size: 38px;
-}
 
 .app-grid-container{
     display: grid;
@@ -189,10 +186,10 @@ footer{
 
 }
 
-    .app-grid-container:hover {
+.app-grid-container:hover {
         box-shadow: 10px 10px 4px var(--rockBlue);
         transition: 0.3s;
-    }
+}
 
 .app-grid-item {
     background-color: var(--stormGray);
@@ -236,3 +233,32 @@ footer{
 }
 
 
+
+.resume-grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2,100px);
+    border: 3px solid var(--satinLinen);
+    background-color: var(--rockBlue);
+    box-shadow: 5px 5px 2px var(--stormGray);
+    border-radius: 10px;
+    grid-gap: 10px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.resume-grid-container:hover {
+        box-shadow: 10px 10px 4px var(--rockBlue);
+        transition: 0.3s;
+}
+
+.resume-grid-item {
+    background-color: var(--stormGray);
+    border: 2px solid var(--medPurple);
+    padding: 1em;
+    border-radius: 5px;
+    font-size: 18px;
+    color: var(--satinLinen);
+    text-align: center;
+    flex-wrap: wrap;
+}
