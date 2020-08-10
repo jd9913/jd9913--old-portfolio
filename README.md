@@ -12,7 +12,7 @@ This website is to showcase my accomplishments and web applications I've built.
 ## Live Website
 https://jd9913.github.io/jd9913
 
-##Github repository
+## Github Repository
 https://github.com/jd9913/jd9913.git
 
 
