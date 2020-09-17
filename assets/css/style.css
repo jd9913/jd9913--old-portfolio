@@ -25,45 +25,26 @@ header {
     position: sticky;
     position: -webkit-sticky;
     top: 0;
-    
-    
+
+
 }
-    
-header h1 {
-    
+
+h1 {
+
+
     font-style: italic;
     font-weight: bold;
-    color: var(--cloudBurst);
+    color: var(--satinLinen);
     font-size: 3.0vw;
 }
-    
-header nav ul li a {
-    text-decoration: none;
-    color:var(--cloudBurst);
-    text-transform: uppercase;
-    font-size: 1.35vw;
-    margin: 0 18px;
-    flex-wrap: wrap;
- }
 
-header nav ul li a:hover{
-    background: var(--satinLinen);
-    color: var(--medPurple);
-    border-radius: 15px;
-    text-shadow: none;
-    font-size: x-large;
-    flex-wrap:wrap;
-}
+.subheader{
 
-header nav ul{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    list-style: none;
-    font-weight: bold;
+    color: var(--satinLinen);
 
 }
+
+
 
 footer {
     padding: 20px 35px;
@@ -81,10 +62,10 @@ footer {
     display: grid;
     grid-template-columns: repeat(2);
     grid-gap: 10px;
-    
+
 }
 
-.aboutme .applications .resume .contact {
+.top {
     padding: 20px 35px;
     border-top: 2px solid var(--satinLinen);
     margin: 40px;
@@ -99,166 +80,42 @@ footer {
 }
 
 
-.profile-grid-container {
-    display: grid;
-   
-    border: 3px solid var(--satinLinen);
+.grid-container {
+   border: 3px solid var(--satinLinen);
     background-color: var(--rockBlue);
     box-shadow: 5px 5px 2px var(--stormGray);
     border-radius: 10px;
-    grid-gap: 20px;
-    margin: 0 auto;
-    padding: 10px;
+
+
+
 }
 
-.profile-grid-container:hover{
-    box-shadow: 10px 10px 4px var(--rockBlue);
+.grid-item:hover{
+    box-shadow: 10px 10px 4px var(--cloudBurst);
     transition: 0.3s;
+
 }
 
 
-.profile-grid-item {
-    background-color: var(--rockBlue);
-    border: 2px solid var(--medPurple);
+.grid-item {
+    background-color: var(--stormGray);
+    border: 3px solid var(--satinLinen);
     padding: 1em;
     border-radius: 5px;
     font-size: 18px;
     color: var(--cloudBurst);
     text-align: center;
-    flex-wrap: wrap;
+
     margin: 10px;
 
-}
-.picture{
-   grid-column: 1/ 2;
-   grid-row: 2/ 3;
-   background-color: var(--satinLinen);
-   padding: 50px;
-
-
-}
-
-.picture > img {
-        object-fit: cover;
-        width:50%;
-        max-height: 100%;
-        border-radius: 10px;
-        border: 2px solid var(--stormGray);
-        
-        
-} 
-
-.name{
-    grid-column: 1/3;
-    grid-row: 1/2;
-    
-    
-
-}
- 
-.desc{
-    grid-column: 2/2;
-    grid-row: 2/3;
+    box-shadow: 5px 5px 2px var(--satinLinen);
 }
 
 
+@include motion-ui-transitions;
 
 
 
-.flex-row{
-    display: flex;
-
-}
-
-
-.app-grid-container{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2,100px);
-    border: 3px solid var(--satinLinen);
-    background-color: var(--rockBlue);
-    box-shadow: 5px 5px 2px var(--stormGray);
-    border-radius: 10px;
-    grid-gap: 10px;
-    margin: 0 auto;
-    padding: 10px;
-
-
-}
-
-.app-grid-container:hover {
-        box-shadow: 10px 10px 4px var(--rockBlue);
-        transition: 0.3s;
-}
-
-.app-grid-item {
-    background-color: var(--stormGray);
-    border: 2px solid var(--medPurple);
-    padding: 1em;
-    border-radius: 5px;
-    font-size: 18px;
-    color: var(--satinLinen);
-    text-align: center;
-    flex-wrap: wrap;
-}
-
-.app1{
-    grid-column: 1/ span 2;
-    grid-row: 1/3;
-
-}
-.app2{
-    grid-column: 3/4;
-    grid-row: 1/2;
-}
-
-.app3{
-    grid-column: 4/5;
-    grid-row: 1/2;
-}
-
-.app4{
-    grid-column: 1/2;
-    grid-row: 3/4;
-}
-
-.app5{
-    grid-column: 2/3;
-    grid-row: 3/4;
-}
-.app6{
-    grid-column: 3/ span 2;
-    grid-row: 2/4;
-
-}
 
 
 
-.resume-grid-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2,100px);
-    border: 3px solid var(--satinLinen);
-    background-color: var(--rockBlue);
-    box-shadow: 5px 5px 2px var(--stormGray);
-    border-radius: 10px;
-    grid-gap: 10px;
-    margin: 0 auto;
-    padding: 10px;
-}
-
-.resume-grid-container:hover {
-        box-shadow: 10px 10px 4px var(--rockBlue);
-        transition: 0.3s;
-}
-
-.resume-grid-item {
-    background-color: var(--stormGray);
-    border: 2px solid var(--medPurple);
-    padding: 1em;
-    border-radius: 5px;
-    font-size: 18px;
-    color: var(--satinLinen);
-    text-align: center;
-    flex-wrap: wrap;
-}

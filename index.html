@@ -1,122 +1,113 @@
-﻿<!doctype html>
-<html>
-    <head>
-        <meta charset ="UTF-8"/>
-        <meta name = "viewport" content = "width-device-width, initial-scale = 1.0"/>
-        <meta http-equiv ="X-UA-
-        Compatible" content = "ie=edge"/>
-        <link rel="stylesheet" href="./assets/css/style.css"/>
-        <title>Jennifer Schlierman</title>
-    </head>
-    <body>
-        <header>
-            <div>
-                <h1>Jennifer Schlierman</h1>
-            </div>
-    
-            <nav> <!--These are links to the different sections-->
-                <ul> <!--unordered list for navigation bar at the top of the page-->
-                
-                    <!--link to the about me -->
-                <li> <a href ="#aboutMe">Who I am</a></li>
-                    <li><!--link to the applications portion-->
-                        <a href ="#Apps"> Applications I'm building</a>
-                    </li>
-                    <!--Link to the resume portion-->
-                    <li><a href ="#resume">Where I've been</a></li>
-                    <!--Link to the contact page/info, located in the footer-->
-                    <li><a href ="contactme">Find me</a></li>
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jennifer Schlierman</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/css/foundation.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/motion-ui/1.2.3/motion-ui.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/css/foundation-prototype.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
+<body>
+
+    <div class="title-bar" data-responsive-toggle="portfolio" data-hid-for="small" data-e="qmvhwd-e" style="display: none;">
+
+        <button class="menu-icon" type="button" data-toggler data-animate="fade-in fade-out"></button>
+        <div class="title-bar-title">Menu</div>
+
+        <div class="top-bar" id="portfolio-menu">
+            <div class="top-bar-left">
+
+                <ul class="menu-text">
+
+                    <li><a href="#">Link 1</a></li>
+                    <li><a href="#">Link 2</a></li>
+                    <li><a href="#">Link 3</a></li>
+
                 </ul>
-            </nav>
-        </header>
-        <main>
-         <!--profile picture, about me summary and other graphics--> 
-         
-            
-            <article class="aboutme">
-            <div>
-               <h2 id="aboutme">About Me</h2>
+
+            </div>
+        </div>
+
+    </div>
+
+    <article class="grid-container">
+        <div class="grid-x grid-margin-x">
+            <div class="medium-7 large-6 cell top">
+                <h1>Jennifer Schlierman</h1>
+                <p class="subheader" >You can't go back and change the beginning, but you can start where you are and change the ending --C.S. Lewis</p>
+            </div>
+            <div class="show-for-large large-3 cell top">
+                <img src="./assets/images/self-portrait.jpg" alt="Jennifer Schlierman" />
+            </div>
+        </div>
+            <div class>
+
+            <hr />
+            </div>
+            <div class>
+                <p class="lead">My projects</p>
             </div>
 
-            <section class="profile-grid-container">
-                
-                <div class="profile-grid-item name">
-                <h2>Jennifer Schlierman</h2>
-                </div>
-                <div class ="profile-grid-item picture">
-                    <img src = "./assets/images/SelfPic_profile.jpg" alt = "Jennifer at home in the office">
-                </div>
-                <div class="profile-grid-item desc">
-                <p>
-                    Random text About Me.  Should explain purpose of site and why people should keep reading.
-                </p>
-                </div>
-            
-            </section>
-          
-            </article>  
-         
-    <!--Applications built-->
+        <div class="grid-x grid-margin-x small-up-1 medium-up-2 large-up-3">
 
-         <article class="applications">
-            <div>
-                <h2 id="Apps">Applications</h2>
+            <div class="cell grid-item">
+                <div class="callout">
+                    <p>Box</p>
+                    <p>box image</p>
+                    <p class="lead">title of links</p>
+                    <p class="subheader">description of card</p>
+                </div>
             </div>
-             <section class="app-grid-container">
-                 <div class="app-grid-item app1">application 1 placeholder</div>
-                 <div class="app-grid-item app2">application 2 placeholder</div>
-                 <div class="app-grid-item app3">application 3 placeholder</div>
-                 <div class="app-grid-item app4">application 4 placeholder</div>
-                 <div class="app-grid-item app5">application 5 placeholder</div>
-                 <div class="app-grid-item app6">application 6 placeholder</div>
-             </section>
-         </article>
-         <!--resume summary, links to additional pages -->
-         <article class="resume">
-             <div>
-            <h2 id="resume">Where I've been</h2>
+
+            <div class="cell grid-item">
+                <div class="callout">
+                    <p>Box</p>
+                    <p>box image</p>
+                    <p class="lead">title of links</p>
+                    <p class="subheader">description of card</p>
+                </div>
             </div>
-             <section class="resume-grid-container">
-                 <div class="resume-grid-item edu">Education
-                 <p>
-                     List of education placeholder
-                 </p>
-                 </div>
-                 <div class="resume-grid-item work">Work History
-                 <p>
-                     List of past employers placeholder
-                 </p>
-                 </div>
-                 
-             </section>
-         </article>
-         
-         </main>
-         <!--Footer with contact/reach out information-->
-        <footer>
-            <section class="contact-container">
-                <div id="contactme" class="contact-item title">
-                    <h1>Contact information:</h1>
-                </div>
-                <div class="contact-item form">
-                    <h3>Contact Me</h3>
-                    <form>
-                        <label for="contact-name"> Your Name</label>
-                        <input type="text" id="contact-name" placeholder="Your Name" />
 
-                        <label for="contact-message">Message</label>
-                        <textarea id="contact-message" placeholder="Message"></textarea>
-
-                        <button type="submit">Submit</button>
-                    </form>
+            <div class="cell grid-item">
+                <div class="callout">
+                    <p>Box</p>
+                    <p>box image</p>
+                    <p class="lead">title of links</p>
+                    <p class="subheader">description of card</p>
                 </div>
-                <div class="contact-item linkedin">
-                    linkedin placeholder
-                </div>
+            </div>
 
-            </section>
-        </footer>
-        
-        
-    </body>
+            <div class="cell grid-item">
+                <div class="callout">
+                    <p>Box</p>
+                    <p>box image</p>
+                    <p class="lead">title of links</p>
+                    <p class="subheader">description of card</p>
+                </div>
+            </div>
+
+        </div>
+    </article>
+    <footer>
+        <div class="grid-x expanded calout secondary"></div>
+        <div class="small-6 large-3 cell bottom">
+            <div class="small-6 large-3 cell"></div>
+            <p class="lead">Contact Me </p>
+
+        </div>
+    </footer>
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.6.3/js/foundation.min.js"></script>
+</body>
 </html>
