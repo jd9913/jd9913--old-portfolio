@@ -2,9 +2,11 @@
 
 exports[`Contact component renders renders 1`] = `
 <DocumentFragment>
-  <section>
+  <section
+    class="grid-container"
+  >
     <h1
-      data-testid="h1tag"
+      data-testid="contactme"
     >
       Contact me
     </h1>
@@ -25,7 +27,7 @@ exports[`Contact component renders renders 1`] = `
       </div>
       <div>
         <label
-          for="exampleInputEmail1"
+          for="email"
         >
           Email address:
         </label>
@@ -47,6 +49,7 @@ exports[`Contact component renders renders 1`] = `
         />
       </div>
       <button
+        class="button"
         data-testid="button"
         type="submit"
       >
