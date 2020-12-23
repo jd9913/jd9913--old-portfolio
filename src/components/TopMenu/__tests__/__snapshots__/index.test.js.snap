@@ -1,0 +1,60 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Nav component matches snapshot 1`] = `
+<DocumentFragment>
+  <section>
+    <div
+      class="branding grid-container jumbotron"
+      data-testid="link"
+      href="/"
+    >
+      <p>
+        <span
+          aria-label="sparkles"
+          role="img"
+          src="../../assets/images/logo/sparkles_2728.png"
+        />
+      </p>
+      <h1>
+        ✨Jennifer!
+      </h1>
+      <p />
+    </div>
+    <div>
+      <a
+        class="btn btn-primary btn-lg"
+        data-testid="highlight"
+        href="#highlights"
+        id="button"
+      >
+        <span>
+          Highlights
+        </span>
+         
+      </a>
+      <a
+        class="btn btn-primary btn-lg"
+        data-testid="contact"
+        href="#contact-form"
+        id="button"
+      >
+        <span>
+          Contact
+        </span>
+         
+      </a>
+      <a
+        class="btn btn-primary btn-lg"
+        data-testid="about"
+        href="#about"
+        id="button"
+      >
+        <span>
+          About Me
+        </span>
+         
+      </a>
+    </div>
+  </section>
+</DocumentFragment>
+`;

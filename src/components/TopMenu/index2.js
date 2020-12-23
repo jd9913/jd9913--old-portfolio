@@ -24,16 +24,16 @@ function categorySelected(){
 
     return (
 
-        <header>
+      <header>  
           <h2>
-          <a href="/">
-              <span role="img" aria-label=""></span> Jennifer!
+          <a data-testid='link' href="/">
+              <span role="img" aria-label="sparkles" src="../../assets/images/logo/sparkles_2728.png">✨Jennifer!</span> 
           </a>
           </h2> 
           <nav>
-              <ul className="flex-row">
+              <ul>
                   <li className="mx-2">
-                      <a href="#about">
+                      <a data-testid='about' href="#about">
                           About Me
                       </a>
                   </li>

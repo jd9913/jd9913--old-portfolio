@@ -1,0 +1,34 @@
+:root {
+    --satinLinen: #ececdc;
+    --rockBlue:#a0b3c7;
+    --stormGray:#6f718f;
+    --medPurple: #7367e6;
+    --cloudBurst:#222d58;
+    --darker: #111111;
+    --error: rgb(228, 46, 1);
+    --spacing-one: calc(1rem * 0.5);
+    --spacing-two: calc(1rem);
+    --spacing-five: calc(2.5rem);
+  
+  }
+
+
+
+
+body{
+    background-color: var(--satinLinen);
+    font-family: Helvetica;
+}
+
+.card-header span{
+    display: inline-block;
+    border-radius: 50%;
+    background-color: var(--rockBlue);
+    height: 40px;
+    width: 40px;
+    vertical-align: middle;
+    margin-right: 15px;
+    color: var(--cloudBurst);
+    font-size: inherit;
+    position: relative;
+}

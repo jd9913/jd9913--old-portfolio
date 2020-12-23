@@ -1,0 +1,37 @@
+
+
+   .callout > .subheader{
+    color: var(--medPurple);
+  }
+
+ 
+  Card.Img > #self-image{
+    border-radius: 15px;
+
+  }
+
+  .grid-item:hover{
+    box-shadow: 10px 10px 4px var(--cloudBurst);
+    transition: 0.3s;
+  
+  }
+
+  
+.grid-item {
+    background-color: var(--stormGray);
+    border: 3px solid var(--satinLinen);
+    padding: 1em;
+    border-radius: 5px;
+    font-size: 18px;
+    color: var(--cloudBurst);
+    text-align: center;
+  
+    margin: 10px;
+  
+    box-shadow: 5px 5px 2px var(--satinLinen);
+  }
+
+  .quotation{
+      color: var(--cloudBurst);
+  }
+

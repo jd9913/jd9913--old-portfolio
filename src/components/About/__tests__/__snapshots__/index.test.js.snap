@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`About component matches snapshot DOM node structure 1`] = `
+<DocumentFragment>
+  <section
+    class="grid-container"
+    id="about"
+  >
+    <h1>
+      About Me
+    </h1>
+    <div
+      class="grid-item card"
+    >
+      <img
+        alt="self-import"
+        class="card-img-top"
+        id="self-image"
+        src="self-portrait.jpg"
+        style="width: 25%;"
+      />
+      <div
+        class="card-body"
+      >
+        <div
+          class="card-title card-title h5"
+          id="about"
+        >
+          About Me
+        </div>
+        <p
+          class="quotation card-text card-text"
+        />
+        <div
+          class="subheader"
+        >
+          <div>
+            You can't go back and change the beginning, but you can start where you are and change the ending --C.S. Lewis
+          </div>
+        </div>
+        <p />
+      </div>
+    </div>
+  </section>
+</DocumentFragment>
+`;
