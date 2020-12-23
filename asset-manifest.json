@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/jd9913/static/css/main.61c36101.chunk.css",
+    "main.js": "/jd9913/static/js/main.9f5b35cf.chunk.js",
+    "main.js.map": "/jd9913/static/js/main.9f5b35cf.chunk.js.map",
+    "runtime-main.js": "/jd9913/static/js/runtime-main.9bf132a4.js",
+    "runtime-main.js.map": "/jd9913/static/js/runtime-main.9bf132a4.js.map",
+    "static/js/2.aa8317d6.chunk.js": "/jd9913/static/js/2.aa8317d6.chunk.js",
+    "static/js/2.aa8317d6.chunk.js.map": "/jd9913/static/js/2.aa8317d6.chunk.js.map",
+    "static/js/3.4fc81526.chunk.js": "/jd9913/static/js/3.4fc81526.chunk.js",
+    "static/js/3.4fc81526.chunk.js.map": "/jd9913/static/js/3.4fc81526.chunk.js.map",
+    "index.html": "/jd9913/index.html",
+    "static/css/main.61c36101.chunk.css.map": "/jd9913/static/css/main.61c36101.chunk.css.map",
+    "static/js/2.aa8317d6.chunk.js.LICENSE.txt": "/jd9913/static/js/2.aa8317d6.chunk.js.LICENSE.txt",
+    "static/media/Wizier.jpg": "/jd9913/static/media/Wizier.7883a66f.jpg",
+    "static/media/cuttingEdge.gif": "/jd9913/static/media/cuttingEdge.9bcfc97b.gif",
+    "static/media/self-portrait.09b40f2d.jpg": "/jd9913/static/media/self-portrait.09b40f2d.jpg",
+    "static/media/weather.png": "/jd9913/static/media/weather.713d1f2e.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.9bf132a4.js",
+    "static/js/2.aa8317d6.chunk.js",
+    "static/css/main.61c36101.chunk.css",
+    "static/js/main.9f5b35cf.chunk.js"
+  ]
+}

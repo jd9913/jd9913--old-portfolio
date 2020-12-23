@@ -1,4 +1,4 @@
-﻿# Personal Portfolio
+# Personal Portfolio
 
 ## Purpose
 This website is to showcase my accomplishments and web applications I've built.
