@@ -18,7 +18,7 @@ https://jd9913.github.io/jd9913
 ## Github Repository
 https://github.com/jd9913/jd9913.git
 
-![screenshot]('./assets/images/portfolio_page.jpg')
+![screenshot](https://github.com/jd9913/jd9913/blob/master/portfolio_page.jpg)
 
 ## Contribution
 Made with ❤️ by jennifer
