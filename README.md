@@ -6,6 +6,9 @@ This website is to showcase my accomplishments and web applications I've built.
 ## Built With
 * HTML
 * CSS
+* Nodejs
+* React
+* Javascript
 
 **others to be added later*
 
