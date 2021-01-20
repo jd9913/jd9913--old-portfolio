@@ -1,0 +1,23 @@
+
+
+<!-- code from opening graphic in VS Code -->
+
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 297.78 60.05">
+    <defs>
+        <style>.cls-1{font-size:44.51px;fill:#222d58;
+        stroke:#ececdc;stroke-miterlimit:10;stroke-width:0.75px;
+        font-family:EdsMarketMainScript, Eds Market Main Script;}</style>
+    </defs>
+    <text class="cls-1" transform="translate(6.78 36.71) scale(0.87 1)">Jennifer Schlierman</text>
+</svg>
+
+
+
+<!-- Code from Adobe Illustrator: -->
+
+<svg id=“Layer_1” data-name=“Layer 1" xmlns=“http://www.w3.org/2000/svg” viewBox=“0 0 297.78 60.05">
+    <text transform=“translate(6.78 36.71) scale(0.87 1)” font-size=“44.51" 
+    fill=“#222D58” stroke=“#ECECDC” stroke-miterlimit=“10” 
+    stroke-width=“0.75" 
+    font-family=“EdsMarketMainScript, Eds Market Main Script”>Jennifer Schlierman</text>
+</svg>
