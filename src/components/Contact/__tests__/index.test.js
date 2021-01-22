@@ -11,19 +11,19 @@ describe('Contact component renders', () => {
   render(<Contact />);
 });
 
-  it('renders', () => {
+  it('matches snapshot', () => {
     const { asFragment } = render(<Contact />)
     expect(asFragment()).toMatchSnapshot()
   })
 })
 
 
-it('renders', () => {
+it('h1 has text content', () => {
   const { getByTestId } = render(<Contact />)
   expect(getByTestId('h1tag')).toHaveTextContent('Contact me')
 })
  
-it('renders', () => {
+it('button has text', () => {
   const { getByTestId } = render(<Contact />)
   expect(getByTestId('button')).toHaveTextContent('Submit')
 })

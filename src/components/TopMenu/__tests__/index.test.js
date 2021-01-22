@@ -5,17 +5,16 @@ import TopMenu from '..';
 
 afterEach(cleanup);
 
-describe('Nav component', ()=>{
+describe('Nav component renders', ()=>{
     it('renders', ()=>{
         render(<TopMenu/>);
     });
 
     it('matches snapshot', ()=>{
         const { asFragment } = render(<TopMenu/>);
-        expect (asFragment()).toMatchSnapshot();
+        expect (asFragment()).toMatchSnapshot()
     })
 
-  
 })
 
 

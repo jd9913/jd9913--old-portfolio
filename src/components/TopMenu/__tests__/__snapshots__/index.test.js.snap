@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Nav component matches snapshot 1`] = `
+exports[`Nav component renders matches snapshot 1`] = `
 <DocumentFragment>
   <section>
     <div
@@ -20,7 +20,9 @@ exports[`Nav component matches snapshot 1`] = `
       </h1>
       <p />
     </div>
-    <div>
+    <div
+      class="navigation"
+    >
       <a
         class="btn btn-primary btn-lg"
         data-testid="highlight"
