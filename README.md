@@ -2,7 +2,7 @@
 
 ## Purpose
 
-This website is to showcase my accomplishments and web applications I've built.
+Full Stack Web Developer and Emergency Manager navigating through a tricky world
 
 ## Built With
 
@@ -11,8 +11,9 @@ This website is to showcase my accomplishments and web applications I've built.
 - Nodejs
 - React
 - Javascript
+- Expressjs
 
-\*_others to be added later_
+
 
 ## Live Website
 
