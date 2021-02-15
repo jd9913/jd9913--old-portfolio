@@ -1,0 +1,22 @@
+{
+  "name": "portfolio-website",
+  "version": "2.0.0",
+  "description": "portfolio website with react express node",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jd9913/jd9913.git"
+  },
+  "author": "jd9913",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jd9913/jd9913/issues"
+  },
+  "homepage": "https://github.com/jd9913/jd9913#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

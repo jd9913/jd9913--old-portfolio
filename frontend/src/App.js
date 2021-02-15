@@ -5,7 +5,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import HomePage from "./Pages/HomePage";
 import AboutPage from "./Pages/AboutPage";
-import ContactPage from "./Pages/ContactPage";
+import ContactForm from "./Pages/ContactForm";
 import ProjectsPage from "./Pages/ProjectsPage";
 import ResumePage from "./Pages/ResumePage";
 
@@ -17,7 +17,7 @@ function App() {
 				<Container>
 					<Route path='/' component={HomePage} exact />
 					<Route path='/about' component={AboutPage} />
-					<Route path='/contact' component={ContactPage} />
+					<Route path='/contact' component={ContactForm} />
 					<Route path='/projects' component={ProjectsPage} />
 					<Route path='/resume' component={ResumePage} />
 				</Container>
