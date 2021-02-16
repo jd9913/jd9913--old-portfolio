@@ -1,0 +1,27 @@
+{
+	"name": "portfolio-website",
+	"type": "module",
+	"version": "2.0.0",
+	"description": "portfolio website with react express node",
+	"main": "server.js",
+	"scripts": {
+		"dev": "nodemon server.js",
+		"start": "node server.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/jd9913/jd9913.git"
+	},
+	"author": "jd9913",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/jd9913/jd9913/issues"
+	},
+	"homepage": "https://github.com/jd9913/jd9913#readme",
+	"dependencies": {
+		"cors": "^2.8.5",
+		"dotenv": "^8.2.0",
+		"express": "^4.17.1",
+		"nodemailer": "^6.4.18"
+	}
+}
