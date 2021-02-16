@@ -1,42 +1,62 @@
 import React, { useState } from "react";
 
 const ContactForm = () => {
-	const [status, setStatus] = useState("Submit");
-	const handleSubmit = async (e) => {
+	const [email, setEmail] = useState("");
+	const [message, setMessage] = useState("");
+	const [name, setName] = useState("");
+
+	const submitRequest = async (e) => {
 		e.preventDefault();
-		setStatus("Sending...");
-		const { name, email, message } = e.target.elements;
-		let details = {
-			name: name.value,
-			email: email.value,
-			message: message.value,
-		};
-		let response = await fetch("http://localhost:5000/contact", {
+		console.log({ name, email, message });
+		const response = await fetch("/contact", {
 			method: "POST",
 			headers: {
-				"Content-Type": "application/json;charset=utf-8",
+				"Content-type": "application/json",
 			},
-			body: JSON.stringify(details),
+			body: JSON.stringify({ name, email, message }),
 		});
-		setStatus("Submit");
-		let result = await response.json();
-		alert(result.status);
+		const resData = await response.json();
+		if (resData.status === "success") {
+			alert("Message Sent.");
+			this.resetForm();
+		} else if (resData.status === "fail") {
+			alert("Message failed to send.");
+		}
 	};
+
 	return (
-		<form onSubmit={handleSubmit}>
+		<form onSubmit={submitRequest}>
 			<div>
 				<label htmlFor='name'>Name:</label>
-				<input type='text' id='name' required />
+				<input
+					type='text'
+					id='name'
+					onChange={(e) => setName(e.target.value)}
+					value={name}
+					required
+				/>
 			</div>
 			<div>
 				<label htmlFor='email'>Email:</label>
-				<input type='email' id='email' required />
+				<input
+					type='email'
+					id='email'
+					required
+					onChange={(e) => setEmail(e.target.value)}
+					value={email}
+				/>
 			</div>
 			<div>
 				<label htmlFor='message'>Message:</label>
-				<textarea id='message' required />
+				<textarea
+					id='message'
+					type='text'
+					onChange={(e) => setMessage(e.target.value)}
+					value={message}
+					required
+				/>
 			</div>
-			<button type='submit'>{status}</button>
+			<button type='submit'>Submit</button>
 		</form>
 	);
 };
