@@ -37,17 +37,6 @@ const TimeLinePage = () => {
 					className='vertical-timeline-element--work'
 					iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}>
 					<h3 className='vertical-timeline-element-title'>
-						Emergency Mangaement Program
-					</h3>
-					<h4 className='vertical-timeline-element-subtitle'>
-						Los Angeles, CA
-					</h4>
-					<p>User Experience, Visual Design</p>
-				</VerticalTimelineElement>
-				<VerticalTimelineElement
-					className='vertical-timeline-element--work'
-					iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}>
-					<h3 className='vertical-timeline-element-title'>
 						Consultant Instructor
 					</h3>
 					<h4 className='vertical-timeline-element-subtitle'>

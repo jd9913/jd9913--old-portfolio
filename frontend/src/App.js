@@ -16,7 +16,7 @@ function App() {
 			<Header />
 			<main className='py-3'>
 				<Container>
-					<Route path='/' conponent={HomePage} exact />
+					<Route path='/' component={HomePage} exact />
 					<Route path='/about' component={AboutPage} />
 					<Route path='/timeline' component={TimeLinePage} />
 					<Route path='/resume' component={ResumePage} />
