@@ -1,6 +1,6 @@
 import React from "react";
 
-function About() {
+function AboutPage() {
 	return (
 		<section>
 			<h1 id='about'>All about me</h1>
@@ -8,4 +8,4 @@ function About() {
 	);
 }
 
-export default About;
+export default AboutPage;
