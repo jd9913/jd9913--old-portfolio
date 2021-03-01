@@ -1,17 +1,34 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Nav, Navbar, Container, Image } from "react-bootstrap";
 import { LinkContainer } from "react-router-bootstrap";
+import { useDispatch, useSelector } from "react-redux";
+import { listResume } from "../actions/resumeActions";
 
-const Header = ({ user }) => {
-	console.log(user);
+const Header = () => {
+	const dispatch = useDispatch();
+	const resumeList = useSelector((state) => state.resumeList);
+	// const { name, image, locationAsString } = resumeList.resumeList.basics;
+
+	console.log(resumeList.resumeList.basics);
+	// const { name } = resumeList.resumeList.basics;
+
+	useEffect(() => {
+		dispatch(listResume());
+	}, [dispatch]);
+
+	const name = "Jennifer";
+	const locationAsString = "Phoenix AZ";
+	const image = "image here";
+
 	return (
 		<header>
 			<Navbar bg='dark' variant='dark' expand='lg' collapseOnSelect>
 				<Container>
 					<LinkContainer to='/'>
 						<Navbar.Brand>
-							<Image src={user.basics.image} style={{ height: 100 }} />
-							{user.basics.name}
+							<Image src={image} style={{ height: 100 }} />
+							<p>{name} </p>
+							<p>{locationAsString}</p>
 						</Navbar.Brand>
 					</LinkContainer>
 					<Navbar.Toggle aria-controls='basic-navbar-nav' />

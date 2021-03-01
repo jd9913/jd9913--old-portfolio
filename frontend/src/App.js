@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import { Container } from "react-bootstrap";
 import Header from "./components/Header";
@@ -9,32 +9,19 @@ import ContactPage from "./pages/ContactPage";
 import ProjectsPage from "./pages/ProjectsPage";
 import ResumePage from "./pages/ResumePage";
 import TimeLinePage from "./pages/TimeLinePage";
-import axios from "axios";
 
 function App() {
-	const [user, setUser] = useState([]);
-
-	useEffect(() => {
-		const fetchResume = async () => {
-			const { data } = await axios.get(
-				"https://gitconnected.com/v1/portfolio/jd9913"
-			);
-			setUser(data);
-		};
-		fetchResume();
-	}, []);
-	console.log(user);
 	return (
 		<Router>
-			<Header user={user} />
+			<Header />
 			<main className='py-3'>
 				<Container>
 					<Route path='/' component={HomePage} exact />
-					<Route path='/about' component={AboutPage} user={user} />
-					<Route path='/timeline' component={TimeLinePage} user={user} />
-					<Route path='/resume' component={ResumePage} user={user} />
-					<Route path='/projects' component={ProjectsPage} user={user} />
-					<Route path='/contact' component={ContactPage} user={user} />
+					<Route path='/about' component={AboutPage} />
+					<Route path='/timeline' component={TimeLinePage} />
+					<Route path='/resume' component={ResumePage} />
+					<Route path='/projects' component={ProjectsPage} />
+					<Route path='/contact' component={ContactPage} />
 				</Container>
 			</main>
 			<Footer />

@@ -1,8 +1,11 @@
 import { createStore, combineReducers, applyMiddleware } from "redux";
 import thunk from "redux-thunk";
 import { composeWithDevTools } from "redux-devtools-extension";
+import { resumeReducer } from "./reducers/resumeReducer.js";
 
-const reducer = combineReducers({});
+const reducer = combineReducers({
+	resumeList: resumeReducer,
+});
 
 const initialState = {};
 
