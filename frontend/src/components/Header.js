@@ -1,14 +1,18 @@
 import React from "react";
-import { Nav, Navbar, Container } from "react-bootstrap";
+import { Nav, Navbar, Container, Image } from "react-bootstrap";
 import { LinkContainer } from "react-router-bootstrap";
 
-const Header = () => {
+const Header = ({ user }) => {
+	console.log(user);
 	return (
 		<header>
 			<Navbar bg='dark' variant='dark' expand='lg' collapseOnSelect>
 				<Container>
 					<LinkContainer to='/'>
-						<Navbar.Brand>Jennifer Davey Schlierman</Navbar.Brand>
+						<Navbar.Brand>
+							<Image src={user.basics.image} style={{ height: 100 }} />
+							{user.basics.name}
+						</Navbar.Brand>
 					</LinkContainer>
 					<Navbar.Toggle aria-controls='basic-navbar-nav' />
 					<Navbar.Collapse id='basic-navbar-nav'>
