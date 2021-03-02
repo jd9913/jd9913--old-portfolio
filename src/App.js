@@ -1,40 +1,28 @@
-import React from 'react';
+import React from "react";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 import Particles from "react-tsparticles";
-import logo from './logo.svg';
-import './App.css';
+
+import "./App.css";
 import particlesOptions from "./particles.json";
+import Footer from "./components/Footer";
+
+import Header from "./components/Header";
+import HomePage from "./pages/HomePage";
+import { Container } from "react-bootstrap";
 
 function App() {
-    return (
-        <div className="App">
-            <Particles options={particlesOptions}/>
-            <header className="App-header">
-                <img src={logo} className="App-logo" alt="logo"/>
-                <p>
-                    Edit <code>src/App.js</code> and save to reload.
-                </p>
-                <p>
-                    Edit <code>src/particles.json</code> to customize Particles, then save to reload.
-                </p>
-                <a
-                    className="App-link"
-                    href="https://reactjs.org"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    Learn React
-                </a>
-                <a
-                    className="App-link"
-                    href="https://particles.js.org"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    See Particles samples
-                </a>
-            </header>
-        </div>
-    );
+	return (
+		<Router>
+			<Particles options={particlesOptions} />
+			<Header />
+			<main>
+				<Container>
+					<Route path='/' component={HomePage} exact />
+				</Container>
+			</main>
+			<Footer style={{ height: "75vh" }} />
+		</Router>
+	);
 }
 
 export default App;
