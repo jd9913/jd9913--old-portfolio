@@ -1,6 +1,7 @@
 import React from "react";
 import { LinkContainer } from "react-router-bootstrap";
 import { Navbar, Nav, Container, Image } from "react-bootstrap";
+import UserInfo from "./UserInfo";
 
 const Header = (props) => {
 	console.log(props);
@@ -12,9 +13,7 @@ const Header = (props) => {
 				<Container>
 					<LinkContainer to='/'>
 						<Navbar.Brand>
-							{/* <Image src={basics.picture} style={{ height: 100 }} />
-							<p>{basics.name} </p>
-							<p>{basics.locationAsString}</p> */}
+							<UserInfo user={props.user} />
 						</Navbar.Brand>
 					</LinkContainer>
 					<Navbar.Toggle aria-controls='basic-navbar-nav' />

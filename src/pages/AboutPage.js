@@ -1,6 +1,6 @@
 import React from "react";
-import { Container, Card, Button } from "react-bootstrap";
-import { LinkContainer } from "react-router-bootstrap";
+import { Container } from "react-bootstrap";
+import About from "../components/About";
 
 const AboutPage = (props) => {
 	const { basics } = props.user;
@@ -8,16 +8,7 @@ const AboutPage = (props) => {
 
 	return (
 		<Container>
-			<Card className='my-3'>
-				<Card.Body>
-					<Card.Title>All About Me</Card.Title>
-
-					<Card.Text>{basics.headline}</Card.Text>
-					<LinkContainer to='/resume'>
-						<Button variant='primary'>See more about me</Button>
-					</LinkContainer>
-				</Card.Body>
-			</Card>
+			<About />
 		</Container>
 	);
 };
