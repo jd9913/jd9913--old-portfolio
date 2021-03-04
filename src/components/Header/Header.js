@@ -1,11 +1,9 @@
 import React from "react";
 import { LinkContainer } from "react-router-bootstrap";
 import { Navbar, Nav, Container, Image } from "react-bootstrap";
-import UserInfo from "./UserInfo";
 
-const Header = (props) => {
-	console.log(props);
-	// const { basics } = props.user;
+const Header = ({ user }) => {
+	console.log(user);
 
 	return (
 		<header>
@@ -13,7 +11,20 @@ const Header = (props) => {
 				<Container>
 					<LinkContainer to='/'>
 						<Navbar.Brand>
-							<UserInfo user={props.user} />
+							<Image
+								className='Avatar'
+								src={user.basics.picture}
+								alt={user.basics.name}
+							/>
+							<div className='UserInfo-name'>{user.basics.name}</div>
+							<a
+								href={`https://gitconnected.com/${user.basics.username}`}
+								target='_blank'
+								rel='noreferrer noopener'>
+								@{user.basics.username}
+							</a>
+							<p>{user.basics.label}</p>
+							<p>Coding in {user.basics.region}</p>
 						</Navbar.Brand>
 					</LinkContainer>
 					<Navbar.Toggle aria-controls='basic-navbar-nav' />
@@ -25,8 +36,11 @@ const Header = (props) => {
 							<LinkContainer to='/timeline'>
 								<Nav.Link>Timeline</Nav.Link>
 							</LinkContainer>
-							<LinkContainer to='/resume'>
-								<Nav.Link>Resume</Nav.Link>
+							<LinkContainer
+								to='http://gitconnected.com/jd9913'
+								target='_blank'
+								rel='noopener noreferrer'>
+								<Nav.Link> View Resume</Nav.Link>
 							</LinkContainer>
 							<LinkContainer to='/contact'>
 								<Nav.Link>Contact</Nav.Link>

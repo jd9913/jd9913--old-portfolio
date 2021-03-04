@@ -1,40 +1,30 @@
 import React, { useState, useEffect } from "react";
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { BrowserRouter as Router } from "react-router-dom";
 import Particles from "react-tsparticles";
 
-import "./App.css";
 import particlesOptions from "./particles.json";
-import Footer from "./components/Footer";
-
-import Header from "./components/Header";
-import AboutPage from "./pages/AboutPage";
-import { Container } from "react-bootstrap";
-import axios from "axios";
+import Pages from "./pages";
 
 function App() {
-	const [user, setUser] = useState([]);
+	const [user, setUser] = useState(null);
 
+	const git_url = "https://gitconnected.com/v1/portfolio/jd9913";
 	useEffect(() => {
-		const fetchResume = async () => {
-			const { data } = await axios.get(
-				"https://gitconnected.com/v1/portfolio/jd9913"
-			);
-			setUser(data);
-		};
-		fetchResume();
+		fetch(git_url)
+			.then((res) => res.json())
+			.then((user) => {
+				setUser(user);
+			});
 	}, []);
-	console.log(user);
+
+	if (!user) {
+		return <div />;
+	}
 	return (
-		<Router>
+		<>
+			<Pages user={user} />;
 			<Particles options={particlesOptions} />
-			<Header user={user} />
-			<main>
-				<Container>
-					<Route path='/' render={() => <AboutPage user={user} />} exact />
-				</Container>
-			</main>
-			<Footer style={{ height: "75vh" }} />
-		</Router>
+		</>
 	);
 }
 
