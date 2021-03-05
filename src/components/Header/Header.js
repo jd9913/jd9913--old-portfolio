@@ -5,6 +5,12 @@ import { Navbar, Nav, Container, Image } from "react-bootstrap";
 const Header = ({ user }) => {
 	console.log(user);
 
+	const picture = user.basics.picture;
+	const name = user.basics.name;
+	const region = user.basics.region;
+	const username = user.basics.username;
+	const label = user.basics.label;
+
 	return (
 		<header>
 			<Navbar bg='dark' variant='dark' expand='lg' collapseOnSelect>
@@ -13,18 +19,19 @@ const Header = ({ user }) => {
 						<Navbar.Brand>
 							<Image
 								className='Avatar'
-								src={user.basics.picture}
-								alt={user.basics.name}
+								src={picture}
+								alt={name}
+								style={{ height: 100 }}
 							/>
-							<div className='UserInfo-name'>{user.basics.name}</div>
+							<div className='UserInfo-name'>{name}</div>
 							<a
-								href={`https://gitconnected.com/${user.basics.username}`}
+								href={`https://gitconnected.com/${username}`}
 								target='_blank'
 								rel='noreferrer noopener'>
-								@{user.basics.username}
+								@{username}
 							</a>
-							<p>{user.basics.label}</p>
-							<p>Coding in {user.basics.region}</p>
+							<p>{label}</p>
+							<p>Coding in {region}</p>
 						</Navbar.Brand>
 					</LinkContainer>
 					<Navbar.Toggle aria-controls='basic-navbar-nav' />

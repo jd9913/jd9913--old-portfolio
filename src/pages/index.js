@@ -10,7 +10,7 @@ import Footer from "../components/Footer";
 const Pages = ({ user }) => {
 	return (
 		<Router>
-			<Header />
+			<Header user={user} />
 			<Switch>
 				<Route exact path='/'>
 					<Me user={user} />
