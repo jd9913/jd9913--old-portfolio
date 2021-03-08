@@ -2,14 +2,14 @@ import React from "react";
 
 const Contact = () => {
 	return (
-		<div>
+		<>
 			<div
 				class='LI-profile-badge'
 				data-version='v1'
 				data-size='medium'
 				data-locale='en_US'
 				data-type='vertical'
-				data-theme='dark'
+				data-theme='light'
 				data-vanity='jd9913'>
 				<a
 					class='LI-simple-link'
@@ -17,7 +17,7 @@ const Contact = () => {
 					Jennifer Schlierman
 				</a>
 			</div>
-		</div>
+		</>
 	);
 };
 
