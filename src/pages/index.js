@@ -4,7 +4,7 @@ import Me from "./Me";
 import Timeline from "./Timeline";
 import Projects from "./Projects";
 import Work from "./Work";
-
+import Contact from "./Contact";
 import Education from "./Education";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
@@ -28,6 +28,9 @@ const Pages = ({ user }) => {
 				</Route>
 				<Route path='/education'>
 					<Education user={user} />
+				</Route>
+				<Route path='/contact'>
+					<Contact user={user} />
 				</Route>
 			</Switch>
 			<Footer />
