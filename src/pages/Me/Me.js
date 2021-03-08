@@ -9,7 +9,7 @@ import {
 
 const Me = ({ user }) => {
 	return (
-		<Container user={user}>
+		<Container user={user} bg='Info'>
 			<Card className='my-3'>
 				<Card.Body>
 					<Card.Title>About Me</Card.Title>

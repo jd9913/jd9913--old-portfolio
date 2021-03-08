@@ -17,7 +17,9 @@ const Projects = ({ user }) => {
 					<ListGroup>
 						{user.projects.map((project, i) => (
 							<ListGroupItem key={i}>
-								<Card.Subtitle>{project.name}</Card.Subtitle>
+								<Card.Subtitle className='bg-success'>
+									{project.name}
+								</Card.Subtitle>
 								<p>{project.summary}</p>
 								<div>
 									{[...project.languages, ...project.libraries].map(
