@@ -5,3 +5,10 @@ h3 {
 main {
 	min-height: 80vh;
 }
+
+#linkedinBadge {
+	font-size: 40px;
+	font-style: italic;
+	font-weight: bold;
+	font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}

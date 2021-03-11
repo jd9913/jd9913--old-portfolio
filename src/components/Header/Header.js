@@ -43,28 +43,30 @@ const Header = ({ user }) => {
 						</Navbar.Brand>
 					</Navbar>
 					<Navbar.Toggle aria-controls='basic-navbar-nav' />
-					<Navbar.Collapse id='basic-navbar-nav'>
-						<Nav className='ml-auto'>
-							<LinkContainer to='/projects'>
-								<Nav.Link className='text-primary'>Projects</Nav.Link>
-							</LinkContainer>
-							<LinkContainer to='/timeline'>
+					<Container>
+						<Navbar.Collapse id='basic-navbar-nav'>
+							<Nav className='ml-auto'>
+								<LinkContainer to='/projects'>
+									<Nav.Link className='text-primary'>Projects</Nav.Link>
+								</LinkContainer>
+								{/* <LinkContainer to='/timeline'>
 								<Nav.Link className='text-primary'>Timeline</Nav.Link>
-							</LinkContainer>
-							<LinkContainer to='/contact'>
-								<Nav.Link className='text-primary'>Contact</Nav.Link>
-							</LinkContainer>
-							<NavItem>
-								<a
-									href='http://gitconnected.com/jd9913'
-									target='_blank'
-									rel='noopener noreferrer'
-									className='text-primary'>
-									View Resume
-								</a>
-							</NavItem>
-						</Nav>
-					</Navbar.Collapse>
+							</LinkContainer> */}
+								<LinkContainer to='/contact'>
+									<Nav.Link className='text-primary'>Contact</Nav.Link>
+								</LinkContainer>
+								<NavItem className=' py-2'>
+									<a
+										href='http://gitconnected.com/jd9913'
+										target='_blank'
+										rel='noopener noreferrer'
+										className='text-primary'>
+										<span>Resume</span>
+									</a>
+								</NavItem>
+							</Nav>
+						</Navbar.Collapse>
+					</Container>
 				</Container>
 			</Navbar>
 		</header>

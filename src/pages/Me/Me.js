@@ -9,19 +9,19 @@ import {
 
 const Me = ({ user }) => {
 	return (
-		<Container user={user} bg='Info'>
+		<Container user={user}>
 			<Card className='my-3'>
 				<Card.Body>
 					<Card.Title>About Me</Card.Title>
 					<Card.Subtitle>Skills</Card.Subtitle>
 					<div>
 						{user.skills.map((skill) => (
-							<Badge pill variant='primary' key={skill.name}>
-								{skill.name}
+							<Badge variant='info' key={skill.name} className='mr-2'>
+								{"  "} {skill.name}
 							</Badge>
 						))}
 					</div>
-					<Card.Text>
+					<Card.Text className='py-2'>
 						<p>{user.basics.summary}</p>
 					</Card.Text>
 					<ListGroup>
