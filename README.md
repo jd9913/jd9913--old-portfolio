@@ -23,5 +23,4 @@ https://github.com/jd9913/jd9913-portfolio-newStart
 
 ![screenshot](https://github.com/jd9913/jd9913/blob/master/sreenshot-profile.jpg)
 
-
 ### ©️2020 Jennifer Schlierman
