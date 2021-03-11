@@ -2,7 +2,7 @@
 
 ## Purpose
 
-This website is to showcase my accomplishments and web applications I've built.
+Full Stack Web Developer | Emergency Manager
 
 ## Built With
 
@@ -11,21 +11,16 @@ This website is to showcase my accomplishments and web applications I've built.
 - Nodejs
 - React
 - Javascript
-
-\*_others to be added later_
+- Bootstrap
 
 ## Live Website
 
-https://jd9913.github.io/jd9913
+https://www.jd9913.com
 
 ## Github Repository
 
-https://github.com/jd9913/jd9913.git
+https://github.com/jd9913/jd9913-portfolio-newStart
 
-![screenshot](https://github.com/jd9913/jd9913/blob/master/portfolio_page.jpg)
-
-## Contribution
-
-Made with ❤️ by jennifer
+![screenshot](https://github.com/jd9913/jd9913/blob/master/sreenshot-profile.jpg)
 
 ### ©️2020 Jennifer Schlierman
