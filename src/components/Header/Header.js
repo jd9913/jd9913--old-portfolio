@@ -1,6 +1,6 @@
 import React from "react";
 import { LinkContainer } from "react-router-bootstrap";
-import { Navbar, Nav, Container, Image } from "react-bootstrap";
+import { Navbar, Nav, Container, Image, NavItem } from "react-bootstrap";
 
 const Header = ({ user }) => {
 	console.log(user);
@@ -13,17 +13,25 @@ const Header = ({ user }) => {
 
 	return (
 		<header>
-			<Navbar bg='dark' variant='dark' expand='lg' collapseOnSelect>
+			<Navbar bg='dark' variant='light' expand='lg' collapseOnSelect>
 				<Container>
 					<LinkContainer to='/'>
-						<Navbar.Brand>
-							<Image
-								className='Avatar'
-								src={picture}
-								alt={name}
-								style={{ height: 100 }}
-							/>
-							<div className='UserInfo-name'>{name}</div>
+						<Navbar>
+							<Navbar.Brand className='text-primary'>
+								<Image
+									className='Avatar'
+									src={picture}
+									alt={name}
+									style={{ height: 100 }}
+								/>
+								{"  "}
+								<div className='UserInfo-name'>{name}</div>
+							</Navbar.Brand>
+						</Navbar>
+					</LinkContainer>
+
+					<Navbar>
+						<Navbar.Brand className='text-primary'>
 							<a
 								href={`https://gitconnected.com/${username}`}
 								target='_blank'
@@ -33,27 +41,32 @@ const Header = ({ user }) => {
 							<p>{label}</p>
 							<p>Coding in {region}</p>
 						</Navbar.Brand>
-					</LinkContainer>
+					</Navbar>
 					<Navbar.Toggle aria-controls='basic-navbar-nav' />
-					<Navbar.Collapse id='basic-navbar-nav'>
-						<Nav className='ml-auto'>
-							<LinkContainer to='/projects'>
-								<Nav.Link>Projects</Nav.Link>
-							</LinkContainer>
-							<LinkContainer to='/timeline'>
-								<Nav.Link>Timeline</Nav.Link>
-							</LinkContainer>
-							<LinkContainer
-								to='http://gitconnected.com/jd9913'
-								target='_blank'
-								rel='noopener noreferrer'>
-								<Nav.Link> View Resume</Nav.Link>
-							</LinkContainer>
-							<LinkContainer to='/contact'>
-								<Nav.Link>Contact</Nav.Link>
-							</LinkContainer>
-						</Nav>
-					</Navbar.Collapse>
+					<Container>
+						<Navbar.Collapse id='basic-navbar-nav'>
+							<Nav className='ml-auto'>
+								<LinkContainer to='/projects'>
+									<Nav.Link className='text-primary'>Projects</Nav.Link>
+								</LinkContainer>
+								{/* <LinkContainer to='/timeline'>
+								<Nav.Link className='text-primary'>Timeline</Nav.Link>
+							</LinkContainer> */}
+								<LinkContainer to='/contact'>
+									<Nav.Link className='text-primary'>Contact</Nav.Link>
+								</LinkContainer>
+								<NavItem className=' py-2'>
+									<a
+										href='http://gitconnected.com/jd9913'
+										target='_blank'
+										rel='noopener noreferrer'
+										className='text-primary'>
+										<span>Resume</span>
+									</a>
+								</NavItem>
+							</Nav>
+						</Navbar.Collapse>
+					</Container>
 				</Container>
 			</Navbar>
 		</header>

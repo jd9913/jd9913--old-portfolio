@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from "react";
-
 import Particles from "react-tsparticles";
-
 import particlesOptions from "./particles.json";
+
 import Pages from "./pages";
 
 function App() {
@@ -22,8 +21,8 @@ function App() {
 	}
 	return (
 		<>
-			<Pages user={user} />;
 			<Particles options={particlesOptions} />
+			<Pages user={user} />;
 		</>
 	);
 }

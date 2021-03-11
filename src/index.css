@@ -2,6 +2,13 @@ h3 {
 	padding: 1rem 0 1rem 0;
 }
 
-.image {
-	align-items: center;
+main {
+	min-height: 80vh;
+}
+
+#linkedinBadge {
+	font-size: 40px;
+	font-style: italic;
+	font-weight: bold;
+	font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }

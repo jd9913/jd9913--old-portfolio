@@ -16,12 +16,12 @@ const Me = ({ user }) => {
 					<Card.Subtitle>Skills</Card.Subtitle>
 					<div>
 						{user.skills.map((skill) => (
-							<Badge pill variant='primary' key={skill.name}>
-								{skill.name}
+							<Badge variant='info' key={skill.name} className='mr-2'>
+								{"  "} {skill.name}
 							</Badge>
 						))}
 					</div>
-					<Card.Text>
+					<Card.Text className='py-2'>
 						<p>{user.basics.summary}</p>
 					</Card.Text>
 					<ListGroup>
