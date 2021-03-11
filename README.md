@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Full Stack Web Developer and Emergency Manager navigating through a tricky world
+Full Stack Web Developer | Emergency Manager
 
 ## Built With
 
@@ -11,22 +11,17 @@ Full Stack Web Developer and Emergency Manager navigating through a tricky world
 - Nodejs
 - React
 - Javascript
-- Expressjs
-
-
+- Bootstrap
 
 ## Live Website
 
-https://jd9913.github.io/jd9913
+https://www.jd9913.com
 
 ## Github Repository
 
-https://github.com/jd9913/jd9913.git
+https://github.com/jd9913/jd9913-portfolio-newStart
 
-![screenshot](https://github.com/jd9913/jd9913/blob/master/portfolio_page.jpg)
+![screenshot](https://github.com/jd9913/jd9913/blob/master/sreenshot-profile.jpg)
 
-## Contribution
-
-Made with ❤️ by jennifer
 
 ### ©️2020 Jennifer Schlierman
